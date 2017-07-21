@@ -1,0 +1,194 @@
+.main {
+  height: 750px;
+  max-width: 100%;
+  background: url('../img/background.jpg') no-repeat 50% 80%;
+  background-size: cover;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: #ffff66 !important;
+}
+
+.container2 {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: justify;
+}
+/*END OF GLOBAL*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+  width: 100%;
+}
+
+.logo {
+  list-style: none;
+}
+
+.logo a, .nav a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 0px 1px 4px black;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav a {
+  font-size: 1.3em;
+  padding: 0 10px;
+}
+/*END OF HEADER*/
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 160px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #fff;
+  text-shadow: 0px 1px 4px black;
+}
+
+h1  {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0px 1px 7px black;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  font-weight: normal;
+  color: #ffff66;
+  text-transform: uppercase;
+  margin-bottom: 130px;
+  text-shadow: 0px 1px 4px black;
+}
+
+.mainBtn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
+  color: #fff;
+  text-shadow: 0px 1px 4px black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 8px;
+  border: 1px solid #fff;
+  transition: 0.5s linear;
+}
+
+.mainBtn:hover {
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid #fff;
+  transform: scale(1.2);
+}
+/*END OF MAIN PAGE*/
+.mainText {
+  padding-top: 35px;
+  font-family: 'Open Sans', sans-serif;
+  color: #4d4d4d;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 740px) {
+  .logo {
+    display: none;
+  }
+
+  /*BURGER MENU*/
+  .nav {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .burger-nav {
+      display: block;
+      height: 40px;
+      width: 100%;
+      background: url('../img/burger-icon.png') no-repeat 98% center;
+      background-size: 30px 50px;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+  }
+
+  header {
+    display: block;
+  }
+
+  header .nav {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.3);
+    height: 0;
+  }
+
+  header .nav.open {
+    height: auto;
+  }
+
+  header .nav li {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+  header .nav li a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid black;
+  }
+}
+/*SECOND ONE*/
+@media screen and (max-width: 468px) {
+
+  h1 {
+   font-size: 2em;
+  }
+
+  h2, h3 {
+    font-size: 1.1em;
+  }
+
+  .mainText {
+    font-size: 1em;
+    padding: 25px 10px;
+  }
+
+  .container2 {
+    max-width: 200px;
+  }
+}
